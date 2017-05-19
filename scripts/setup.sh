@@ -35,3 +35,6 @@ sudo apt-get -y -q install postgresql libpq-dev postgresql-contrib
 
 # Set Password to test for user postgres
 sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD 'test';"
+
+#set user wso2
+sudo useradd wso2 
