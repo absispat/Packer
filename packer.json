@@ -3,7 +3,7 @@
     {
       "type": "shell",
       "scripts": [
-        "scripts/setup.sh"
+        "https://github.com/ThenukaD/Packer/blob/master/scripts/setup.sh"
       ]
     }
   ],
@@ -22,7 +22,7 @@
       "boot_wait": "4s",
       "guest_os_type": "Ubuntu_64",
       "http_directory": "http",
-      "iso_url": "/home/thenuka/Downloads/ubuntu-14.04.4-server-amd64.iso",
+      "iso_url": "http://ftp.riken.jp/Linux/ubuntu-releases/14.04.4/ubuntu-14.04-server-amd64.iso",
       "iso_checksum": "2ac1f3e0de626e54d05065d6f549fa3a",
       "iso_checksum_type": "md5",
       "ssh_username": "vagrant",
