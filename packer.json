@@ -3,24 +3,13 @@
     {
       "type": "shell",
       "scripts": [
-        "scripts/root_setup.sh"
-      ],
-      "override": {
-        "virtualbox": {
-          "execute_command": "echo 'vagrant' | sudo -S sh '{{ .Path }}'"
-        }
-      }
-    },
-    {
-      "type": "shell",
-      "scripts": [
         "scripts/setup.sh"
       ]
     }
   ],
   "builders": [
     {
-      "type": "virtualbox",
+      "type": "virtualbox-iso",
       "boot_command": [
         "<esc><esc><enter><wait>",
         "/install/vmlinuz noapic preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg <wait>",
