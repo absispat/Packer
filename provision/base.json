@@ -1,5 +1,7 @@
 {
   "variables": {
+    "aws_access_key": "{{env `aws_access_key`}}",
+    "aws_secret_key": "{{env `aws_secret_key`}}",
     "name": "BASE",
     "base_ami": "ami-0a19a669",
     "region": "ap-southeast-1",
@@ -11,8 +13,8 @@
   "builders": [
     {
       "type": "amazon-ebs",
-      "access_key": "{{env `aws_access_key`}}",
-      "secret_key": "{{env `aws_secret_key`}}",
+      "access_key": "{{usr `aws_access_key`}}",
+      "secret_key": "{{usr `aws_secret_key`}}",
       "region": "{{user `region`}}",
       "source_ami": "{{user `base_ami`}}",
       "instance_type": "t2.micro",
