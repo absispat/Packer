@@ -64,6 +64,22 @@
       "inline": [
       "sh /opt/{{user `config_dir`}}/setup.sh"
       ]
+    },
+
+    { 
+      "type": "shell", 
+      "inline": [
+	"mkdir /tmp/tests"
+      ] 
+    }, 
+    { 
+      "type": "file", 
+      "source": "serverspec/", 
+      "destination": "/tmp/tests" 
+    }, 
+    { 
+      "type": "shell", 
+      "script": "/opt/{{user `config_dir`}}/serverspec.sh" 
     }
   ]
 }
