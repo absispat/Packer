@@ -79,7 +79,10 @@
     }, 
     { 
       "type": "shell", 
-      "script": "/opt/{{user `config_dir`}}/serverspec.sh" 
+      "execute_command": "echo {{user `ssh_username`}} | {{ .Vars }} sudo -E -S sh '{{ .Path }}'",
+      "inline": [
+      "sh /opt/{{user `config_dir`}}//serverspec.sh" 
+      ]
     }
   ]
 }
