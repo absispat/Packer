@@ -2,6 +2,7 @@
   "variables": {
     "aws_access_key": "{{env `aws_access_key`}}",
     "aws_secret_key": "{{env `aws_secret_key`}}",
+    "aws_vpc_id": "",
     "name": "BASE",
     "base_ami": "ami-80861296",
     "region": "us-east-1",
