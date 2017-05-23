@@ -2,7 +2,6 @@
   "variables": {
     "aws_access_key": "{{env `aws_access_key`}}",
     "aws_secret_key": "{{env `aws_secret_key`}}",
-    "aws_vpc_id": "{{env `aws_vpc_id}}",
     "name": "BASE",
     "base_ami": "ami-80861296",
     "region": "us-east-1",
@@ -17,7 +16,6 @@
       "type": "amazon-ebs",
       "access_key": "{{user `aws_access_key`}}",
       "secret_key": "{{user `aws_secret_key`}}",
-      "aws_vpc_id": "{{user `aws_vpc_id`}}",
       "region": "{{user `region`}}",
       "source_ami": "{{user `base_ami`}}",
       "instance_type": "t2.micro",
