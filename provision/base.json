@@ -5,7 +5,7 @@
     "aws_vpc_id": "{{env `aws_vpc_id`}}",
     "name": "BASE",
     "base_ami": "ami-80861296",
-    "region": "us-east-1",
+    "region": "us-west-1",   
     "ssh_username": "ubuntu",
     "scripts_dir": "scripts/ubuntu",
     "config_dir": "config",
