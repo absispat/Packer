@@ -3,8 +3,8 @@ set -e
 
 echo Install dependencies...
 # Update the box
-apt-get -y update
-apt-get -y upgrade
+apt-get update -y
+#apt-get -y upgrade
 
 # Install dependencies
-apt-get -y install curl unzip jq
+apt-get install curl unzip -y

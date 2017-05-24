@@ -5,7 +5,7 @@ echo "Installing serverspec"
 
 sudo apt-get install ruby -y
 
-sudo gem install serverspec -y
+sudo gem install serverspec
 
 cd /tmp/tests
 
