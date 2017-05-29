@@ -86,7 +86,7 @@
       "type": "shell", 
       "execute_command": "echo {{user `ssh_username`}} | {{ .Vars }} sudo -E -S sh '{{ .Path }}'",
       "inline": [
-      "sh /opt/{{user `config_dir`}}//serverspec.sh" 
+      "sh /opt/{{user `config_dir`}}/serverspec.sh" 
       ]
     }
   ]
