@@ -8,3 +8,10 @@ describe package('unzip') do
         it {should be_installed }
 end
 
+describe package('puppetmaster') do
+	it { should be_installed }
+end
+
+describe package('httpd') do
+	it { should be_installed }
+end
