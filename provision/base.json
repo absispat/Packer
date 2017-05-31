@@ -2,11 +2,11 @@
   "variables": {
     "aws_access_key": "{{env `aws_access_key`}}",
     "aws_secret_key": "{{env `aws_secret_key`}}",
-    "aws_vpc_id": "{{env `aws_vpc_id`}}",
+    "aws_vpc_id": "{{env `vpc_id`}}",
     "subnet_id": "{{env `subnet_id`}}",
-    "name": "BASE",
-    "base_ami": "ami-02373015",
-    "region": "us-east-1",   
+    "name": "WSO2_BASE_AMI",
+    "base_ami": "{{env `base_ami`}}",
+    "region": "{{env `region`}}",   
     "ssh_username": "ubuntu",
     "scripts_dir": "scripts/ubuntu",
     "config_dir": "config",
@@ -24,13 +24,11 @@
       "source_ami": "{{user `base_ami`}}",
       "instance_type": "t2.micro",
       "ssh_username": "ubuntu",
-      "ami_name": "{{user `name`}}-WSO2AM-Default-{{isotime \"2006-01-02-1504\"}}",
-      "ami_description": "WSO2 API Manager Default profile on Ubuntu 14.04",
+      "ami_name": "{{user `name`}}-Default-{{isotime \"2006-01-02-1504\"}}",
+      "ami_description": "WSO2 Base AMI for Ubuntu 16.04",
       "tags": {
-        "Name": "WSO2AM-Default-Base",
-        "Product": "WSO2AM",
-        "Version": "2.1.0",
-        "Profile": "Default",
+        "Name": "WSO2AMI-Default-Base",
+        "Project": "Public Cloud",
         "Build": "{{ user `buildtime` }}"
       },
       "ami_block_device_mappings": [
