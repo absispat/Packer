@@ -15,7 +15,7 @@
           "provisioners": [
             {
               "type": "shell",
-              "script": "scripts/startup-script-base-image.sh"
+              "script": "startup-script-base-image.sh"
             }
           ]
         }
