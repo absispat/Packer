@@ -1,0 +1,21 @@
+{
+          "builders": [
+            {
+              "image_name": "ovo-base-image-starter",
+              "type": "googlecompute",
+              "project_id": "cloudcover-sandbox",
+              "source_image_family": "ubuntu-1804-lts",
+              "image_family": "ubuntu-1804-lts",
+              "ssh_username": "ubuntu",
+              "zone": "asia-south1-a",
+              "tags": ["ovo-poc","ssh"],
+              "scopes": "https://www.googleapis.com/auth/cloud-platform"
+            }
+          ],
+          "provisioners": [
+            {
+              "type": "shell",
+              "script": "scripts/startup-script-base-image.sh"
+            }
+          ]
+        }
