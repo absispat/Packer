@@ -5,7 +5,7 @@
   become: true
 
   tasks:
-    - name: install Apache
+    - name: install nginx
       package:
-        name: 'httpd'
+        name: 'nginx'
         state: present
