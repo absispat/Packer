@@ -1,7 +1,7 @@
 {
           "builders": [
             {
-              "image_name": "service1-ovo-test-sep18",
+              "image_name": "service1-ovo-test-sep19",
               "type": "googlecompute",
               "project_id": "cloudcover-sandbox",
               "source_image_family": "ubuntu-1804-lts",
