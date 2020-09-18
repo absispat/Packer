@@ -1,11 +1,11 @@
 {
           "builders": [
             {
-              "image_name": "demo-ovo-test",
+              "image_name": "service1-ovo-test-sep18",
               "type": "googlecompute",
               "project_id": "cloudcover-sandbox",
               "source_image_family": "ubuntu-1804-lts",
-              "image_family": "ubuntu-1804-lts",
+              "image_family": "service1-ovo-test",
               "ssh_username": "ubuntu",
               "zone": "asia-south1-a",
               "tags": ["ovo-poc","ssh"],
