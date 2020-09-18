@@ -9,4 +9,3 @@
       package:
         name: 'nginx'
         state: present
-
